@@ -77,7 +77,97 @@ Toda a configuração necessária já está pronta nas duas aplicações. Não �
 Após iniciar os projetos, basta acessar a aplicação web pelo navegador através do endereço localhost configurado.
 
 ### PostgreSQL
-- Banco principal para persistência real
+- Banco principal para persistência real dos dados.
 - Alternativa configurável
 
+Caso queira utilizar o PostgreSQL em vez do H2, é necessário configurar corretamente o arquivo `application-prod.properties`.
+Nesse arquivo, você deve inserir as informações do seu banco de dados, como:
+
+- URL de conexão  
+- Usuário  
+- Senha
+
+A configuração do PostgreSQL no projeto está definida utilizando **variáveis de ambiente** no arquivo `application-prod.properties`.
+
+Isso significa que os dados sensíveis (como usuário e senha) **não estão diretamente no código**, o que é a forma mais recomendada. <br>
+Para que a aplicação funcione corretamente, você deve:
+
+- Criar as variáveis de ambiente com **os mesmos nomes definidos no projeto**:
+  - `DB_URL`
+  - `DB_USERNAME`
+  - `DB_PASSWORD`
+
+ Alternativa: 
+ Caso prefira usar nomes diferentes para as variáveis:
+ - Será necessário **alterar também o `application-prod.properties`** para refletir os novos nomes.
+
+### Dúvidas sobre variáveis de ambiente?
+
+Caso tenha dúvidas sobre como criar ou configurar variáveis de ambiente, você pode consultar um outro projeto onde explico esse processo passo a passo.
+
+- [Acesse aqui o guia completo](https://github.com/Kathlynleticia/conversor-de-moedas/tree/main)
+
 ---
+
+## Integração com versão Web
+
+A versão admin alimenta diretamente a versão web.
+
+O banco H2 é compartilhado entre as duas aplicações, permitindo que as séries cadastradas no admin sejam exibidas automaticamente no frontend.
+
+---
+
+## Como executar o projeto
+
+### Pré-requisitos
+
+- Java 17+
+- Maven
+- IntelliJ IDEA (opcional)
+
+---
+
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/Kathlynleticia/JustSeries
+```
+
+### 2. Abrir o projeto
+
+Abra a pasta da versão admin na IDE de sua preferência.
+
+Exemplo:
+- IntelliJ IDEA
+- VS Code
+- Eclipse
+
+### 3. Executar a aplicação
+
+Execute a classe principal do projeto.
+
+Ou utilize o comando:
+
+```bash
+mvn spring-boot:run
+```
+
+---
+
+
+
+
+
+
+## Observações
+
+- O sistema evita duplicação de séries através da listagem prévia antes de novos cadastros
+- Algumas validações são feitas diretamente no fluxo do terminal
+- O foco principal do projeto é aprendizado de arquitetura Spring Boot e integração com APIs externas
+
+---
+
+## 🙋🏻 Autora
+
+Kathlyn Santos
+
