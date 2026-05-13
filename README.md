@@ -184,12 +184,20 @@ Exemplo:
 - Eclipse
 
 ### 3. Executar a versão Admin
-Execute a classe principal do projeto. 
+**Execute a classe principal do projeto.**
 
 Ou utilize o comando:
 
+Windows:
+
 ```bash
-mvn spring-boot:run
+mvnw.cmd spring-boot:run
+```
+
+Linux/Mac:
+
+```bash
+./mvnw spring-boot:run
 ```
 
 Responsável pelo gerenciamento e persistência das séries.
@@ -207,17 +215,56 @@ Exemplo:
 - Eclipse
 
 ### 2. Executar a versão Web API
-Execute a classe principal do projeto. 
+**Execute a classe principal do projeto.**
 
 Ou utilize o comando:
 
+Windows:
+
 ```bash
-mvn spring-boot:run
+mvnw.cmd spring-boot:run
+```
+
+Linux/Mac:
+
+```bash
+./mvnw spring-boot:run
 ```
 
 Disponibiliza os endpoints REST para consumo do frontend.
 
 ---
+
+### ⚠️ Observação importante (Java / JAVA_HOME)
+
+Em algumas máquinas, o Maven Wrapper pode não funcionar corretamente se o Java não estiver configurado no sistema.
+
+Caso apareça erro relacionado a JAVA_HOME, utilize uma das opções abaixo:
+
+- Solução 1 (recomendada) <br>
+Configure o JAVA_HOME no sistema operacional apontando para o JDK instalado.
+
+- Solução 2 (temporária no terminal) <br>
+Descubra o JDK rodando isso:
+
+```bash
+Get-ChildItem "C:\Program Files\Java"
+```
+ou 
+
+```bash
+Get-ChildItem "C:\Program Files\Eclipse Adoptium"
+```
+Se aparecer algo tipo:
+
+- jdk-17
+- jdk-21
+
+Você roda:
+
+```bash
+$env: JAVA_HOME="C:\Program Files\Java\jdk-21"; .\mvnw.cmd spring-boot:run
+```
 
 ## Executar o Frontend
 
