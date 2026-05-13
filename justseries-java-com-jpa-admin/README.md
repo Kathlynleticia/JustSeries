@@ -48,7 +48,7 @@ O projeto foi organizado utilizando separação em camadas:
 - Enums
 - Lists
 - Optional (tratamento seguro de dados)
-- Streams (utilizado durante o desenvolvimento, posteriormente substituído em parte por consultas no banco)
+- Streams (utilizado durante o desenvolvimento, posteriormente substituído por **Query Methods**)
 - Interfaces
 - Records
 - Spring Boot
