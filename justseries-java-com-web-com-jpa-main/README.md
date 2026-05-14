@@ -211,8 +211,15 @@ Para que os dados apareçam corretamente no frontend:
 
 ---
 ## Demonstração - Execução do Sistema
+<br>
 
-
+![Principal](images/principal.jpg)<br>
+<br>
+![categorias](images/categorias.jpg)<br>
+<br>
+![Série escolhida](images/Serieescolhida.jpg)<br>
+<br>
+![Temporadas](images/temporadas.jpg)<br>
 
 ---
 
