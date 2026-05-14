@@ -208,8 +208,6 @@ $env: JAVA_HOME="C:\Program Files\Java\jdk-21"; .\mvnw.cmd spring-boot:run
 <br>
 ![Ano lançamento](images/anolancamento.jpg)<br>
 
----
-
 ## Observações
 
 - O sistema evita duplicação de séries através da listagem prévia antes de novos cadastros
