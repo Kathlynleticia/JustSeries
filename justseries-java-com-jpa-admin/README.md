@@ -192,6 +192,21 @@ $env: JAVA_HOME="C:\Program Files\Java\jdk-21"; .\mvnw.cmd spring-boot:run
 ```
 ---
 ## Demonstração - Execução do Sistema
+<br>
+
+![menu](images/menu.jpg)<br>
+<br>
+![Episódios salvos](images/ep-salvos.jpg)<br>
+<br>
+![Top 5 séries](images/avaliacao-serie.jpg)<br>
+<br>
+![Categoria Série](images/categoria.jpg)<br>
+<br>
+![Temporadas número](images/temporadas-numero.jpg)<br>
+<br>
+![Busca por palavra](images/palavra-especifica-episodio.jpg)<br>
+<br>
+![Ano lançamento](images/anolancamento.jpg)<br>
 
 ---
 
