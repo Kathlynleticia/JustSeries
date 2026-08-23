@@ -77,8 +77,15 @@ Toda a configuração necessária já está pronta nas duas aplicações. Não �
 Após iniciar os projetos, basta acessar a aplicação web pelo navegador através do endereço localhost, `http://localhost:8080/h2-console`
 Em seguida preencha os dados de acordo com as configurações presentes no arquivo `application-dev.properties` e clique em Connect.
 
+⚠️ Porta da aplicação
 
+É importante saber em qual porta a aplicação está rodando para acessar o console do H2 no navegador.
 
+Por padrão, o Spring Boot utiliza: http://localhost:8080
+Mas essa porta pode variar. Para descobrir a porta, ao iniciar a aplicação, verifique o terminal/log. Procure por uma mensagem do Tomcat semelhante a:
+
+Tomcat started on port(s): 8080
+O número exibido será a porta da aplicação.
 
 ### PostgreSQL
 - Banco principal para persistência real dos dados.
