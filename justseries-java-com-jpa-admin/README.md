@@ -74,7 +74,11 @@ Caso deseje adicionar novas séries, basta executar a versão admin, listar as s
 
 Toda a configuração necessária já está pronta nas duas aplicações. Não é necessário alterar caminhos, bancos ou configurações manualmente.
 
-Após iniciar os projetos, basta acessar a aplicação web pelo navegador através do endereço localhost configurado.
+Após iniciar os projetos, basta acessar a aplicação web pelo navegador através do endereço localhost, `http://localhost:8080/h2-console`
+Em seguida preencha os dados de acordo com as configurações presentes no arquivo `application-dev.properties` e clique em Connect.
+
+
+
 
 ### PostgreSQL
 - Banco principal para persistência real dos dados.
